@@ -1,0 +1,27 @@
+rows of bricks 
+size 2 or 3 
+each layer can't line up brick boundaries 
+how many variations can there be for a given sized grid to fill 
+
+obviously the edge lines up, 
+length 2 rows regardless of hieght only one answer 
+length 3 rows regardless of heigh only 1 answer 
+length 4 1 row 1 answer 
+length 4 2+ even number 0 answers 
+length 5 2 answers regardless of height 
+length 6 height 1 2 answers regardless of height 
+length 7 gets interesting? 
+
+2 2 3 
+3 2 2
+2 3 2
+
+left side needs to be 2->3->2->3 
+and right side needs to be either 2-3-2-3 or 3-2-3-2 
+
+but really need to generate number of options starting and ending with each combination 
+each will have a binary list of blocks spaces 
+need  to and those lists and confirm all 0 
+breakdown into 4 groups up front is the optimization knowing that end locations will be set by above to be different 
+not clear the optimization helps but informs the challenge 
+
